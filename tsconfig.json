@@ -11,6 +11,7 @@
   },
   "include": [
     "./src/index.ts",
+    "./src/rakuten.ts",
   ],
   "exclude": [
     "./test/*.spec.ts"

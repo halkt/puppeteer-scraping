@@ -1,0 +1,7 @@
+const RAKUTEN_SHOKEN_LOGIN_ID = process.env.RAKUTEN_SHOKEN_LOGIN_ID || 'mock';
+const RAKUTEN_SHOKEN_LOGIN_PW = process.env.RAKUTEN_SHOKEN_LOGIN_PW || 'mock';
+
+export {
+  RAKUTEN_SHOKEN_LOGIN_ID,
+  RAKUTEN_SHOKEN_LOGIN_PW,
+};

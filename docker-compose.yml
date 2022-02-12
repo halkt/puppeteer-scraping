@@ -10,6 +10,9 @@ services:
       NODE_ENV: "development"
       PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: "true"
       PUPPETEER_EXECUTABLE_PATH: "/usr/bin/chromium-browser"
+      RAKUTEN_SHOKEN_LOGIN_ID: ${RAKUTEN_SHOKEN_LOGIN_ID}
+      RAKUTEN_SHOKEN_LOGIN_PW: ${RAKUTEN_SHOKEN_LOGIN_PW}
+      SLACK_INCOMMING_WEBHOOK_URL: ${SLACK_INCOMMING_WEBHOOK_URL}
     volumes:
       - ./:/usr/src/app
     working_dir: "/usr/src/app"

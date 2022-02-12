@@ -1,5 +1,5 @@
 import puppeteer from 'puppeteer';
-import formatDate from './formatDate';
+import { formatDate } from './formatDate';
 
 (async () => {
   try {

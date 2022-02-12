@@ -1,21 +1,24 @@
 {
-  "name": "puppeteer-scraping",
-  "version": "0.1.0",
-  "description": "puppetter with docker alpine",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "license": "UNLICENSED",
-  "private": true,
-  "scripts": {
-      "build": "tsc",
-      "tap": "babel-node dist/index.js",
-      "start": "yarn build && yarn tap"
-  },
-  "devDependencies": {
-      "@types/node": "^13.7.1",
-      "@types/puppeteer": "^5.4.0"
-  },
-  "dependencies": {
-      "puppeteer": "^5.4.1"
-  }
+    "name": "puppeteer-scraping",
+    "version": "0.1.0",
+    "description": "puppetter with docker alpine",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "license": "UNLICENSED",
+    "private": true,
+    "scripts": {
+        "build": "tsc",
+        "tap": "babel-node dist/index.js",
+        "rakuten-tap": "babel-node dist/rakuten.js",
+        "start": "yarn build && yarn tap",
+        "rakuten": "yarn build && yarn rakuten-tap"
+    },
+    "devDependencies": {
+        "@types/node": "^13.7.1",
+        "@types/puppeteer": "^5.4.0"
+    },
+    "dependencies": {
+        "axios": "^0.25.0",
+        "puppeteer": "^5.4.1"
+    }
 }
