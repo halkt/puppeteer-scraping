@@ -40,6 +40,14 @@ RAKUTEN_SHOKEN_LOGIN_PW=${your_login_password}
 SLACK_INCOMMING_WEBHOOK_URL=${your_slack_webhook_url}
 ```
 
+## prettierの使い方
+
+手動実行する場合、コンテナ内で下記のコマンドを実行する
+
+```sh
+yarn fmt
+```
+
 ## 参考
 
 [【puppeteerでスクレイピング】Alpine Dockerコンテナからpuppeteerで動的サイトのスクレイピングを試してみる](https://deep.tacoskingdom.com/blog/52)
