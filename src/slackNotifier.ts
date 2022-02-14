@@ -1,5 +1,5 @@
 export const slackNotifier = async (text: String) => {
-  const axiosBase = require('axios');
+  const axiosBase = require('axios')
   const options = {
     method: 'post',
     url: process.env.SLACK_INCOMMING_WEBHOOK_URL,
@@ -9,12 +9,12 @@ export const slackNotifier = async (text: String) => {
     },
     data: `payload={
       "text": "${text}",
-    }`
-  };
+    }`,
+  }
   try {
-    const response = await axiosBase.request(options);
-    console.log(response.data);
-  } catch(error) {
-    console.log(error);
+    const response = await axiosBase.request(options)
+    console.log(response.data)
+  } catch (error) {
+    console.log(error)
   }
 }
