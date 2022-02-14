@@ -7,6 +7,7 @@
     "license": "UNLICENSED",
     "private": true,
     "scripts": {
+        "fmt": "prettier --write 'src/**/*.ts'",
         "build": "tsc",
         "tap": "babel-node dist/index.js",
         "rakuten-tap": "babel-node dist/rakuten.js",
@@ -15,7 +16,8 @@
     },
     "devDependencies": {
         "@types/node": "^13.7.1",
-        "@types/puppeteer": "^5.4.2"
+        "@types/puppeteer": "^5.4.2",
+        "prettier": "2.5.1"
     },
     "dependencies": {
         "axios": "^0.25.0",
