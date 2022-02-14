@@ -1,6 +1,6 @@
 {
     "name": "puppeteer-scraping",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "puppetter with docker alpine",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
@@ -15,10 +15,10 @@
     },
     "devDependencies": {
         "@types/node": "^13.7.1",
-        "@types/puppeteer": "^5.4.0"
+        "@types/puppeteer": "^5.4.2"
     },
     "dependencies": {
         "axios": "^0.25.0",
-        "puppeteer": "^5.4.1"
+        "puppeteer": "^13.3.2"
     }
 }
