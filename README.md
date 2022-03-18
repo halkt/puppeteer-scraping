@@ -8,25 +8,7 @@
 docker-compose build
 ```
 
-## 使い方
-
-コンテナ生成後、下記を実行してコンテナ内に入ります
-
-```sh
-docker-compose run --rm app bash
-```
-
-```sh
-# テスト用のサンプル
-yarn start
-```
-
-```sh
-# 楽天証券の評価損益を取得してSlackに通知
-yarn rakuten
-```
-
-## 楽天証券スクレイピングの利用方法
+### 楽天証券スクレイピングの利用方法
 
 下記のコマンドを実行後、`.env`ファイルの中身を修正する
 
@@ -40,12 +22,23 @@ RAKUTEN_SHOKEN_LOGIN_PW=${your_login_password}
 SLACK_INCOMMING_WEBHOOK_URL=${your_slack_webhook_url}
 ```
 
+## 使い方
+
+```sh
+docker-compose run --rm app yarn rakuten
+```
+
+```sh
+# テスト用のサンプル
+docker-compose run --rm app yarn start
+```
+
 ## prettierの使い方
 
 手動実行する場合、コンテナ内で下記のコマンドを実行する
 
 ```sh
-yarn fmt
+docker-compose run --rm app yarn fmt
 ```
 
 ## 参考
